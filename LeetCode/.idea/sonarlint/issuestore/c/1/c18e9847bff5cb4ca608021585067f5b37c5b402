@@ -1,0 +1,12 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(á–Ì“
+T
+java:S1854"9Remove this useless assignment to local variable "cubes".(ÃÂÒâşÿÿÿÿ
+E
+java:S1611
+"/Remove the parentheses around the "n" parameter(†°İÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(´¦Å—
+g
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(¦š)
+E
+java:S1481"*Remove this unused "cubes" local variable.(ÃÂÒâşÿÿÿÿ
