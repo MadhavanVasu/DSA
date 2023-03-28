@@ -16,6 +16,7 @@ public class LongestCycleInGraph {
             int j = i;
             int length = 0;
             Map<Integer, Integer> currTraversal = new HashMap<>();
+
             currTraversal.put(i, 0);
             while (true) {
                 int v = edges[j];
