@@ -71,8 +71,6 @@ U
 +LeetCode/Easy/KthMissingPositiveNumber.java,3\6\36345fad2cd878944d645557c907f20e9e486864
 M
 LeetCode/Medium/TrimABST.java,5\9\593e1322537a747a2c06636c46630f4865ef1763
-S
-#LeetCode/Medium/CountGoodNodes.java,3\9\39007aeb9122e7906aa204e2a6d9766a59eb6cf6
 ^
 .LeetCode/Medium/AppendKIntegersWithMinSum.java,4\8\485192d9293f3262972472dac12e83beef70d49b
 ^
@@ -123,8 +121,6 @@ L
 LeetCode/Model/TreeNode.java,0\4\046d6e34a5efb427f4f544d5e6f5389943291b95
 c
 3LeetCode/Medium/BinaryTreeFromInorderPostorder.java,d\e\deaffd01117c95deee7f669d8a8bbe915722f74c
-\
-,LeetCode/Medium/CheckCompletenessOfTree.java,a\4\a4a0c68e3d6c5dda3bbeee5963174ddcbe8c70f9
 I
 LeetCode/Hard/NQueen.java,a\7\a7c263dbe9b67c475324c1c8b9f4c4202cbcdd3b
 V
@@ -133,8 +129,6 @@ S
 #LeetCode/Medium/BrowserHistory.java,e\8\e8cdce1d2690d42d3c806a1b769c85e55470f7c7
 V
 &LeetCode/Easy/SplitWithMinimumSum.java,7\e\7ecda11207928ca457528c39c1b6cc532215f667
-I
-LeetCode/Medium/Trie.java,e\5\e549c35555f20a4db9d8fc646b7d0eff2e490718
 S
 #LeetCode/Medium/WordDictionary.java,a\4\a49e9d107ea6ec4e88716b911ed1cc540568ee0c
 R
@@ -143,3 +137,30 @@ U
 %LeetCode/Medium/MinimumScorePath.java,6\2\622bfef92f6b117af86542416305cd210675b944
 X
 (LeetCode/Medium/ZeroFilledSubbarray.java,6\8\687378f36285e2502dd0e112150f79b61dd1314d
+V
+&LeetCode/Easy/NumberOfEvenOddBits.java,b\6\b6be579d3cab39d46340adfb3bbbec31434acc13
+b
+2LeetCode/Medium/ReorderRoutesToLeadToCityZero.java,8\a\8a58959a04de675cf829599804e8b15501dd01ae
+b
+2LeetCode/Medium/SmallestMissingPosIntAfterOps.java,9\4\94ba2720ce3f466eb47602cb6efb32affd43a858
+U
+%LeetCode/Medium/BuyAndSellStock2.java,4\6\461b152608bdbd809b2cc9747616b0bc49a0fff6
+T
+$LeetCode/Medium/CombinationSum3.java,2\2\225dcd59d2fe326e77d199084c4d00ab126d6eb1
+O
+LeetCode/Medium/CountPairs.java,2\7\27c21249611d1ee0dcb4b22bbf297b7f6ab1e620
+X
+(LeetCode/Medium/LongestCycleInGraph.java,9\e\9eccf2165d5965bd74e1e05a3e03f9f0c05ff225
+W
+'LeetCode/Easy/KItemsWithMaximumSum.java,c\7\c7be195f8f12075d5a3191bad5bafae727a30983
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+S
+#LeetCode/Medium/MinCostTickets.java,0\b\0bac0855cb8c520e917903b3e4a859e45c2ddb19
+U
+%LeetCode/Easy/BalancedBinaryTree.java,1\7\174b0a75a79690bd841a6df48b9c5c846ec15c93
+_
+/LeetCode/Easy/RemovePalindromicSubsequence.java,5\5\55fa4f2d98d371c442922505537ef7e7d98a5fff
+]
+-LeetCode/Medium/ValidateBinarySearchTree.java,d\3\d381a71e0ee7cef0d57994ad5f4fe08b6394ea9b

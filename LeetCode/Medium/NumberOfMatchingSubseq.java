@@ -1,5 +1,8 @@
 package LeetCode.Medium;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class NumberOfMatchingSubseq {
 
     public static boolean isSubsequenceMatching(int i, int j, String s, String word, int n, int m) {
@@ -15,9 +18,13 @@ public class NumberOfMatchingSubseq {
 
     public static int numMatchingSubseq(String s, String[] words) {
         int result = 0;
-        for (String x : words) {
+        Map<String, Integer> map = new HashMap<>();
+        for (String str : words) {
+            map.put(str, map.getOrDefault(str, 0) + 1);
+        }
+        for (String x : map.keySet()) {
             if (isSubsequenceMatching(0, 0, s, x, s.length(), x.length()))
-                result += 1;
+                result += map.get(x);
         }
         return result;
 
@@ -26,7 +33,7 @@ public class NumberOfMatchingSubseq {
     public static void main(String[] args) {
 
         String s = "dsahjpjauf";
-        String[] words = { "ahjpjau", "ja", "ahbwzgqnuk", "tnmlanowax" };
+        String[] words = {"ahjpjau", "ja", "ahbwzgqnuk", "tnmlanowax"};
         System.out.println(numMatchingSubseq(s, words));
 
     }
