@@ -194,3 +194,9 @@ V
 &LeetCode/Medium/TopKFrequentWords.java,2\b\2b00cb4fe650a76eb7ecb4b40f52480ecce76289
 M
 LeetCode/Easy/MoveZeroes.java,0\2\026463d91694713d628c9b17aec8de240a437745
+[
++LeetCode/Medium/EqualRowAndColumnPairs.java,1\d\1d744124c7367932919c7eb8af14eb5502842a78
+`
+0LeetCode/Medium/MaximumLevelSumOfBinaryTree.java,f\6\f68764d27270c4c80bd4ed2ad4f1ea3e5a7316fe
+f
+6LeetCode/Contest/Weekly350/TotalDistanceTravelled.java,3\c\3ceab3067f5e8fe3319599f55c6161202e7c7145
