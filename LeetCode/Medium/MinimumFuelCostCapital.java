@@ -1,8 +1,39 @@
 package LeetCode.Medium;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MinimumFuelCostCapital {
+
+    int fuel = 0;
+
+    public int helper(int i, int[] visited, List<List<Integer>> adjList, int seats) {
+        visited[i] = 1;
+        int nodes = 1;
+        for (int x : adjList.get(i)) {
+            if (visited[x] == 0) {
+                nodes += helper(x, visited, adjList, seats);
+            }
+        }
+        int r = nodes % seats;
+        int q = nodes / seats;
+        fuel += q;
+        if (r > 0) fuel += 1;
+        return nodes;
+    }
+
+    public long minimumFuelCostDFS(int[][] roads, int seats) {
+        int n = roads.length + 1;
+        List<List<Integer>> adjList = new ArrayList<>();
+        for (int i = 0; i < n; i++) adjList.add(new ArrayList<>());
+        for (int[] road : roads) {
+            adjList.get(road[0]).add(road[1]);
+            adjList.get(road[1]).add(road[0]);
+        }
+        int[] visited = new int[n];
+        helper(0, visited, adjList, seats);
+        return fuel;
+    }
 
     static long minFuel = 0;
 

@@ -17,10 +17,8 @@ public class DiameterOfBinaryTree {
     }
 
     public int diameterOfBinaryTree(TreeNode root) {
-
         maxDepth(root);
         return maxDiameter;
-
     }
 
     public static void main(String[] args) {
