@@ -86,8 +86,6 @@ _
 F
 LeetCode/Hard/IPO.java,2\5\254a9f03df183de8db400f4554993674b5d38f31
 S
-#LeetCode/Easy/FindPivotInteger.java,4\9\49207f83b94754b55c778ebc8951f75a603867d2
-S
 #LeetCode/Medium/MinimumPathSum.java,0\e\0e8198f62dea9fb993372f9b14fbc7fd02504372
 Y
 )LeetCode/Medium/TopKFrequentElements.java,3\6\3625158b871ec9e984b72eb0be3d4315005923b7

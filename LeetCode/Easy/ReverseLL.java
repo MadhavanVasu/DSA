@@ -3,7 +3,6 @@ package LeetCode.Easy;
 import LeetCode.Model.ListNode;
 
 public class ReverseLL {
-
     public ListNode reverseListRecursion(ListNode head) {
         /* recursive solution */
         return reverseListInt(head, null);
