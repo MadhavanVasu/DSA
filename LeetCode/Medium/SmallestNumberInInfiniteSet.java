@@ -1,6 +1,6 @@
 package LeetCode.Medium;
 
-import java.util.*;
+import java.util.TreeSet;
 
 class SmallestInfiniteSet {
 

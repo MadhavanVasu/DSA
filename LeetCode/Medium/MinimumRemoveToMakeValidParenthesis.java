@@ -1,6 +1,8 @@
 package LeetCode.Medium;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.Stack;
 
 public class MinimumRemoveToMakeValidParenthesis {
 

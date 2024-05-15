@@ -2,8 +2,6 @@ package LeetCode.Medium;
 
 import LeetCode.Model.TreeNode;
 
-import java.util.PriorityQueue;
-
 public class SmallestStringStartingFromLeaf {
 
     String result = null;

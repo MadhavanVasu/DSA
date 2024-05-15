@@ -1,9 +1,6 @@
 package LeetCode.Contest.Weekly389;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
 
 public class MinimumDeletionsToMakeStringKEqual {
     public boolean isFeasible(int moves, int[] charFreq, int k) {

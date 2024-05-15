@@ -1,7 +1,5 @@
 package LeetCode.Hard;
 
-import java.util.Arrays;
-
 public class BuyAndSellStock3 {
 
     public static int helper(int i, int tradeDirection, int left, int[] prices, int n, int[] dp) {

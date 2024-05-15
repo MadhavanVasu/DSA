@@ -1,7 +1,5 @@
 package LeetCode.Contest.Weekly387;
 
-import java.util.Arrays;
-
 public class MinimumOperationToWriteTheLetterOnGrid {
 
     public int minimumOperationsToWriteY(int[][] grid) {

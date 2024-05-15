@@ -1,7 +1,5 @@
 package LeetCode.Medium;
 
-import java.util.Arrays;
-
 public class FirstCompletelyPaintedIndex {
     public int firstCompleteIndex(int[] arr, int[][] mat) {
         int n = mat.length;

@@ -2,7 +2,9 @@ package LeetCode.Easy;
 
 import LeetCode.Model.TreeNode;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
 
 public class PreOrderTraversal {
 

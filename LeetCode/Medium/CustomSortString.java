@@ -1,7 +1,5 @@
 package LeetCode.Medium;
 
-import java.util.Arrays;
-
 public class CustomSortString {
 
     public String customSortString(String order, String s) {

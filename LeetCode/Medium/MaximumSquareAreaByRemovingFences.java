@@ -1,6 +1,8 @@
 package LeetCode.Medium;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class MaximumSquareAreaByRemovingFences {
     public int maximizeSquareArea(int m, int n, int[] hFences, int[] vFences) {

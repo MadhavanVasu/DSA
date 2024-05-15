@@ -1,7 +1,5 @@
 package LeetCode.Medium;
 
-import java.util.Arrays;
-
 public class LongestIncreasingSubsequence {
 
     public int helper(int i, int j, int[] nums, Integer[][] dp, int n) {

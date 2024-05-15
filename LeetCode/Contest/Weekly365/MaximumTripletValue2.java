@@ -1,7 +1,5 @@
 package LeetCode.Contest.Weekly365;
 
-import java.util.Map;
-
 public class MaximumTripletValue2 {
 
     public long maximumTripletValue(int[] nums) {

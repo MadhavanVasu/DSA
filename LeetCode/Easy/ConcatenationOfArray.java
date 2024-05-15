@@ -1,7 +1,5 @@
 package LeetCode.Easy;
 
-import java.util.Arrays;
-
 public class ConcatenationOfArray {
 
     public int[] getConcatenation(int[] nums) {

@@ -1,8 +1,5 @@
 package LeetCode.Contest.Weekly355;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class LargestElementAfterMerge {
 
     public long maxArrayValue(int[] nums) {

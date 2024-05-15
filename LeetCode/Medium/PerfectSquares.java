@@ -1,7 +1,5 @@
 package LeetCode.Medium;
 
-import java.util.Arrays;
-
 public class PerfectSquares {
 
     public int helper(int i, int sum, int n, int[] perfectSquare, Integer[][] dp, int m) {

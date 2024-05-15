@@ -1,6 +1,5 @@
 package LeetCode.Medium;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class FrequencyOfMostFrequentElement {

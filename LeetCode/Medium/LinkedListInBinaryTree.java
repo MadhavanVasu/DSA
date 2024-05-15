@@ -4,7 +4,6 @@ import LeetCode.Model.ListNode;
 import LeetCode.Model.TreeNode;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class LinkedListInBinaryTree {

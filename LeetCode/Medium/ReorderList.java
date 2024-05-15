@@ -2,8 +2,6 @@ package LeetCode.Medium;
 
 import LeetCode.Model.ListNode;
 
-import java.util.List;
-
 public class ReorderList {
 
     public ListNode reverseList(ListNode curr, ListNode next) {
