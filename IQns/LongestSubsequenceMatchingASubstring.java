@@ -1,7 +1,7 @@
-package IQns;
-
-public class LongestSubsequenceMatchingASubstring {
-
+//package IQns;
+//
+//public class LongestSubsequenceMatchingASubstring {
+//
 //    // "azecde"
 //    // "abcde"
 //
@@ -14,8 +14,7 @@ public class LongestSubsequenceMatchingASubstring {
 //        if (x.charAt(i) == y.charAt(j)) a = 1 + helper(i + 1, j + 1, x, y, n, m, dp);
 //        b = helper(i, j + 1, x, y, n, m);
 //
-//
 //    }
 //
-
-}
+//
+//}
