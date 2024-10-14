@@ -1,59 +1,58 @@
 package LeetCode.Medium;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class MinimumCostToConvertToString1 {
-    class Pair {
-        char c;
-        int distance;
 
-        public Pair(char c, int distance) {
-            this.c = c;
-            this.distance = distance;
+    public long[][] computeShortestPathUsingFloydWarshall(int n, long[][] adjMatrix) {
+        long[][] currMatrix = new long[n][n];
+        for (int i = 0; i < n; i++) {
+            System.arraycopy(adjMatrix[i], 0, currMatrix[i], 0, n);
         }
-    }
-
-    public long dfs(char s, char d, Long[][] dp, Map<Character, List<Pair>> adjMap, int[] visited) {
-        if (s == d) return 0;
-        int i = s - 'a';
-        int j = d - 'a';
-        if (dp[i][j] != null) return dp[i][j];
-        long ans = Long.MAX_VALUE;
-        if (!adjMap.containsKey(s)) return ans;
-        for (Pair adjacent : adjMap.get(s)) {
-            int next = adjacent.c - 'a';
-            int distance = adjacent.distance;
-            if (visited[next] == 0) {
-                visited[next] = 1;
-                long currMin = dfs(adjacent.c, d, dp, adjMap, visited);
-                if (currMin != Long.MAX_VALUE) {
-                    currMin += distance;
-                    if (currMin < ans) ans = currMin;
+        for (int i = 0; i < n; i++) {
+            long[][] nextMatrix = new long[n][n];
+            for (int j = 0; j < n; j++) {
+                System.arraycopy(currMatrix[j], 0, nextMatrix[j], 0, n);
+            }
+            for (int x = 0; x < n; x++) {
+                for (int y = 0; y < n; y++) {
+                    for (int z = 0; z < n; z++) {
+                        if (currMatrix[y][x] != Long.MAX_VALUE && currMatrix[x][z] != Long.MAX_VALUE) {
+                            long dist = currMatrix[y][x] + currMatrix[x][z];
+                            nextMatrix[y][z] = Math.min(nextMatrix[y][z], dist);
+                        }
+                    }
                 }
-                visited[next] = 0;
+            }
+
+            for (int j = 0; j < n; j++) {
+                System.arraycopy(nextMatrix[j], 0, currMatrix[j], 0, n);
             }
         }
-        dp[i][j] = ans;
-        return ans;
+        return currMatrix;
     }
 
+
     public long minimumCost(String source, String target, char[] original, char[] changed, int[] cost) {
-        Long[][] dp = new Long[26][26];
-        Map<Character, List<Pair>> adjMap = new HashMap<>();
-        for (int i = 0; i < original.length; i++) {
-            List<Pair> adj = adjMap.getOrDefault(original[i], new ArrayList<>());
-            adj.add(new Pair(changed[i], cost[i]));
-            adjMap.put(original[i], adj);
+        long[][] adjMatrix = new long[26][26];
+        for (int i = 0; i < 26; i++) {
+            for (int j = 0; j < 26; j++) {
+                if (i != j)
+                    adjMatrix[i][j] = Long.MAX_VALUE;
+            }
         }
+        for (int i = 0; i < original.length; i++) {
+            if (adjMatrix[original[i] - 'a'][changed[i] - 'a'] > cost[i])
+                adjMatrix[original[i] - 'a'][changed[i] - 'a'] = cost[i];
+        }
+        long[][] minDistance = computeShortestPathUsingFloydWarshall(26, adjMatrix);
         long result = 0;
         for (int i = 0; i < source.length(); i++) {
-            int[] visited = new int[26];
-            long tempResult = dfs(source.charAt(i), target.charAt(i), dp, adjMap, visited);
-            if (tempResult == Long.MAX_VALUE) return -1;
-            result += tempResult;
+            if (source.charAt(i) != target.charAt(i)) {
+                long dist = minDistance[source.charAt(i) - 'a'][target.charAt(i) - 'a'];
+                if (dist == Long.MAX_VALUE) return -1;
+                result += dist;
+            }
         }
         return result;
     }
